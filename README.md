@@ -25,5 +25,15 @@
 
 * In experiment 3 we saved a model in `cifar10_model/cifar10.mlflow` directory
 * This model can be served via this command: `mlflow models serve --no-conda -m cifar10.mlflow -p 5001`
-* The API is served the at `http://localhost:5001/invocations` 
-  * e.g. you can call it with (mind that input format is not aligned to our model in this example) `curl http://localhost:5001/invocations -H 'Content-Type: application/json' -d '{"columns": ["a", "b", "c"], "data": [[1, 2, 3], [4, 5, 6]]}'` 
+* The API is served the at `http://localhost:5001/invocations`
+  * e.g. you can call it with (mind that input format is not aligned to our model in this example) `curl http://localhost:5001/invocations -H 'Content-Type: application/json' -d '{"columns": ["a", "b", "c"], "data": [[1, 2, 3], [4, 5, 6]]}'`
+
+### Screenshots
+
+![Web app UI](exp3_1.png)
+
+![Training loss visualization](exp3_2_tr_loss.png)
+
+![Test accuracy](exp3_3_test_acc.png)
+
+![Main experiment UI](exp3_4_main.png)
